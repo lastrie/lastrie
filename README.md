@@ -1,16 +1,21 @@
-### Hi there 👋
 
-<!--
-**lastrie/lastrie** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#Masukkan nama hari dari Senin - Jumat
+nama_hari <- c("Senin","Selasa","Rabu","Kamis","Jumat")
 
-Here are some ideas to get you started:
+#Masukkan jam kerja berurutan dari jam kerja di hari senin
+jam_kerja <- c(8, 7.5, 10, 7, 7.5)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#Memberikan nama pada vector jam_kerja
+names(jam_kerja) <- nama_hari
+
+#Tampilkan isi jam_kerja sekarang
+jam_kerja
+
+#Jam kerja Andra di hari Senin menggunakan nama
+jam_kerja[1]
+
+#Jam kerja Andra di hari Senin, Rabu, dan Jumat menggunakan nama
+jam_kerja[c(1, 3, 5)]
+
+#Selisih jam kerja Andra di hari Senin dengan hari Rabu
+jam_kerja[1] - jam_kerja[3]
